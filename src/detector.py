@@ -3,7 +3,7 @@ import easyocr
 from flask import jsonify, abort
 
 
-def reader(path, lang, isDetail, isGpu):
+def detect_image(path, lang, isDetail, isGpu):
     try:
         image = cv2.imread(fr'{path}')
         img_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)

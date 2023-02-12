@@ -1,7 +1,7 @@
 import cv2
 import easyocr
 
-img = cv2.imread(r'assets/images/id_card.jpg')
+img = cv2.imread(r'../assets/images/id_card.jpg')
 img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # img_wb_card = cv2.threshold(img_gray, 80, 255, cv2.THRESH_BINARY)[1]
